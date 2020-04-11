@@ -5,7 +5,6 @@
     "license": "MIT",
     "scripts": {
         "develop": "gatsby develop",
-        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
         "start": "npm run develop",
         "build": "gatsby build",
         "serve": "gatsby serve"
@@ -27,7 +26,5 @@
         "react-dom": "^16.5.1",
         "react-helmet": "^5.2.0"
     },
-    "devDependencies": {
-        "gh-pages": "^2.2.0"
-    }
+    "devDependencies": {}
 }

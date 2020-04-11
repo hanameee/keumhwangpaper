@@ -56,24 +56,6 @@ const Home = (props) => {
                             제품 더 보기
                         </a>
                     </div>
-                    {/* <div className="col-4 mb-2">
-                        <Img
-                            fluid={data.file.childImageSharp.fluid}
-                            alt="headshot"
-                        />
-                    </div>
-                    <div className="col-4 mb-2">
-                        <Img
-                            fluid={data.file.childImageSharp.fluid}
-                            alt="headshot"
-                        />
-                    </div>
-                    <div className="col-4 mb-2">
-                        <Img
-                            fluid={data.file.childImageSharp.fluid}
-                            alt="headshot"
-                        />
-                    </div> */}
                     <div className="col-12 col-md-10 mb-1">
                         <div className="card service service-teaser">
                             <div className="card-content">
