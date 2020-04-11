@@ -5,9 +5,10 @@ module.exports = {
     siteMetadata: {
         title: "금황한지산업",
         description: "금황한지산업 홈페이지에 오신 것을 환영합니다.",
+        siteUrl: "http://www.koreanpaper.kr",
         contact: {
-            phone: "010-4074-3188",
-            email: "geumwhang@gmail.com",
+            ceo: "이관모",
+            address: "경기도 평택시 청북읍 고잔5길 67-46",
         },
         menuLinks: [
             {
@@ -37,6 +38,8 @@ module.exports = {
         "gatsby-transformer-json",
         "gatsby-transformer-remark",
         "gatsby-plugin-react-helmet",
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: "gatsby-source-filesystem",
             options: {

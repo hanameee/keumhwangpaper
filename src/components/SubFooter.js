@@ -9,22 +9,25 @@ const SubFooter = (props) => (
                     <div className="sub-footer">
                         <ul>
                             <li>
-                                <strong>Phone: </strong>
-                                {props.data.site.siteMetadata.contact.phone}
+                                <strong>대표자: </strong>
+                                {props.data.site.siteMetadata.contact.ceo}
                             </li>
                             <li>
-                                <strong>Email: </strong>{" "}
+                                <strong>주소: </strong>{" "}
                                 <a
-                                    href={`mailto:${props.data.site.siteMetadata.contact.email}`}
+                                    href={`mailto:${props.data.site.siteMetadata.contact.address}`}
                                 >
-                                    {props.data.site.siteMetadata.contact.email}
+                                    {
+                                        props.data.site.siteMetadata.contact
+                                            .address
+                                    }
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <a href="https://www.geumhwangpaper.com">
-                                    www.geumhwangpaper.com
+                                <a href="https://www.koreanpaper.kr">
+                                    https://www.koreanpaper.kr
                                 </a>
                             </li>
                         </ul>
@@ -42,8 +45,8 @@ export default (props) => (
                 site {
                     siteMetadata {
                         contact {
-                            email
-                            phone
+                            ceo
+                            address
                         }
                     }
                 }
