@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import SEO from "../components/SEO";
 import Layout from "../layouts/index";
 import Img from "gatsby-image";
-
+import Example from "../components/Carousel";
 const Home = (props) => {
     const data = useStaticQuery(graphql`
         query {
@@ -41,6 +41,7 @@ const Home = (props) => {
                     </p>
                 </div>
             </div>
+            <Example />
             <div className="container img-container pt-6 pt-md-4">
                 <div className="row justify-content-start">
                     <div className="col-12">
