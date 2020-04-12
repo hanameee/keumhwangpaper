@@ -61,19 +61,32 @@
     }
 }
 
-.img-container {
-    .gatsby-image-wrapper {
-        box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2);
-    }
-    .btn-container {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 .intro-small {
     padding-top: 100px;
     padding-bottom: 30px;
+}
+
+.CarouselWrapper {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        display: flex;
+        margin-bottom: 0;
+    }
+    .CarouselText {
+        margin-bottom: 2rem;
+    }
+    .Carousel {
+        margin: 0 auto;
+        // width: 300px;
+    }
+    .pointColor {
+        color: $primary;
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes floating {
