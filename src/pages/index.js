@@ -3,9 +3,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import Helmet from "react-helmet";
 import SEO from "../components/SEO";
 import Layout from "../layouts/index";
-import Img from "gatsby-image";
 import CompanyTimeline from "../components/History";
 import IntroCarousel from "../components/Carousel";
+import Certificates from "../components/Certificates";
+
 const Home = (props) => {
     const data = useStaticQuery(graphql`
         query {
@@ -23,7 +24,6 @@ const Home = (props) => {
             }
         }
     `);
-    console.log(data);
 
     return (
         <Layout bodyClass="page-home">
@@ -34,7 +34,7 @@ const Home = (props) => {
                     content="금황한지산업 소개 홈페이지"
                 />
             </Helmet>
-            <div className="intro pb-4">
+            <div className="intro">
                 <div className="container">
                     <h1>금황한지산업에 오신 것을 환영합니다.</h1>
                     <p>
@@ -83,7 +83,7 @@ const Home = (props) => {
                         </div>
                     </div>
                     <div className="col-12 my-2 btn-container">
-                        <a href="/services" className="button">
+                        <a href="/business" className="button">
                             제품 더 보기
                         </a>
                     </div>
@@ -91,14 +91,11 @@ const Home = (props) => {
                         <h2 className="title-4">금황한지산업이 걸어온 길</h2>
                         <CompanyTimeline />
                     </div>
-                    <div className="col-12 col-md-10 mt-2 mb-1">
-                        <div className="card service service-teaser">
-                            <div className="card-content">
-                                <h2 className="title-4">
-                                    믿을 수 있는 금황한지산업
-                                </h2>
-                                <p>인증서</p>
-                            </div>
+                    <div className="col-12 col-md-10 mt-2 mb-4">
+                        <h2 className="title-4">믿을 수 있는 금황한지산업</h2>
+                        <p>인증서 및 시험성적서 목록</p>
+                        <div className="CertificatesWrapper">
+                            <Certificates />
                         </div>
                     </div>
                 </div>

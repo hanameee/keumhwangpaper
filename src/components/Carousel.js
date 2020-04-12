@@ -23,10 +23,10 @@ function IntroCarousel(props) {
     `);
 
     return (
-        <Carousel>
+        <Carousel indicators={false}>
             {images.allFile.edges.map(({ node }) => (
                 <Paper elevation={3}>
-                    <Img fluid={node.childImageSharp.fluid} />
+                    <Img fluid={node.childImageSharp.fluid} loading="eager" />
                 </Paper>
             ))}
         </Carousel>
