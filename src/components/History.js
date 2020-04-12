@@ -2,22 +2,22 @@ import React from "react";
 import "./HistoryStyle.css";
 const CompanyTimeline = () => {
     return (
-        <ul class="cbp_tmtimeline">
+        <ul className="cbp_tmtimeline">
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>1988년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-phone"></div>
+                <div className="cbp_tmlabel">
                     <p>기계한지 제조기 제작 및 설치</p>
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>1991년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-screen"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-screen"></div>
+                <div className="cbp_tmlabel">
                     <p>
                         기계한지 포장지를 시작으로 색한지 및 창호용 건자재용
                         한지 생산
@@ -25,11 +25,11 @@ const CompanyTimeline = () => {
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>1992년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-mail"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-mail"></div>
+                <div className="cbp_tmlabel">
                     <p>
                         전통한지인 수록지를 기계지와 겸용으로 생산하면서
                         전통한지의 노하우를 기계산업한지에 적용
@@ -37,11 +37,11 @@ const CompanyTimeline = () => {
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>1998년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-mail"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-mail"></div>
+                <div className="cbp_tmlabel">
                     <p>
                         여과용 필터지 발명
                         <br />
@@ -51,11 +51,11 @@ const CompanyTimeline = () => {
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>2003년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-mail"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-mail"></div>
+                <div className="cbp_tmlabel">
                     <p>
                         항산화물질인 탄화리그닌 개발
                         <br />
@@ -64,20 +64,20 @@ const CompanyTimeline = () => {
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>2006년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-mail"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-mail"></div>
+                <div className="cbp_tmlabel">
                     <p>기름먹는한지 시리즈 개발</p>
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime">
+                <time className="cbp_tmtime">
                     <span>2014년</span>
                 </time>
-                <div class="cbp_tmicon cbp_tmicon-mail"></div>
-                <div class="cbp_tmlabel">
+                <div className="cbp_tmicon cbp_tmicon-mail"></div>
+                <div className="cbp_tmlabel">
                     <p>
                         부직포 접착이 가능한 한지 개발 (황토한지마스크용 한지)
                     </p>

@@ -14,22 +14,18 @@ module.exports = {
             {
                 name: "회사 소개",
                 link: "/",
-                // link: "/services",
             },
             {
                 name: "한지 이야기",
-                link: "/",
-                // link: "/team",
+                link: "/story",
             },
             {
                 name: "비즈니스",
-                // link: "/testimonials",
-                link: "/",
+                link: "/business",
             },
             {
                 name: "Contact",
-                // link: "/contact",
-                link: "/",
+                link: "/contact",
             },
         ],
     },
