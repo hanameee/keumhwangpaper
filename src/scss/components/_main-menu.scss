@@ -33,22 +33,20 @@
                 -webkit-transition: ease 3s;
                 transition: ease 0.3s;
                 &:hover {
-                    background: $primary;
-                    color: #fff;
+                    color: $primary;
                     text-decoration: none;
                 }
             }
         }
         > li.active {
             > a {
-                background: $primary;
                 text-decoration: none;
-                color: #fff;
+                color: $primary;
+                font-weight: bold;
                 &:hover {
                     text-decoration: none;
-                    background: $primary;
                     transition: all 225ms ease-in 0s;
-                    color: #fff;
+                    color: $primary;
                 }
                 span {
                     display: block;

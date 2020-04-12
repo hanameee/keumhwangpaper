@@ -1,37 +1,36 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@material-ui/core";
+import { Paper } from "@material-ui/core";
+import Img from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
 
-function Example(props) {
-    var items = [
-        {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!",
-        },
-        {
-            name: "Random Name #2",
-            description: "Hello World!",
-        },
-    ];
+function IntroCarousel(props) {
+    const images = useStaticQuery(graphql`
+        query {
+            allFile(filter: { relativeDirectory: { eq: "intro" } }) {
+                edges {
+                    node {
+                        base
+                        childImageSharp {
+                            fluid(maxWidth: 400) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `);
 
     return (
         <Carousel>
-            {items.map((item) => (
-                <Item item={item} />
+            {images.allFile.edges.map(({ node }) => (
+                <Paper elevation={3}>
+                    <Img fluid={node.childImageSharp.fluid} />
+                </Paper>
             ))}
         </Carousel>
     );
 }
 
-function Item(props) {
-    return (
-        <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
-
-            <Button className="CheckButton">Check it out!</Button>
-        </Paper>
-    );
-}
-
-export default Example;
+export default IntroCarousel;
