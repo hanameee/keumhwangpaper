@@ -1,7 +1,4 @@
 const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
-require("dotenv").config({
-    path: `.env.${process.env.NODE_ENV}`,
-});
 
 module.exports = {
     pathPrefix: "/keumhwangpaper",
