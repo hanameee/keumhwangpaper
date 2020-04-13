@@ -17,9 +17,9 @@
         justify-content: center;
         align-items: center;
         transition: 0.7s ease-in-out;
-    }
-    .CardHoverText:hover {
-        background-color: darken(#68d698, 10%);
-        opacity: 80%;
+        &:hover {
+            background-color: darken(#68d698, 10%);
+            opacity: 80%;
+        }
     }
 }
