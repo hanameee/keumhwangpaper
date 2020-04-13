@@ -10,10 +10,7 @@ const Story = (props) => {
             <div className="intro">
                 <div className="container">
                     <h1>한지 이야기</h1>
-                    <p>
-                        한지 (hanji, handmade traditional Korean paper made from
-                        mulberry trees) 의 효능에 대해 소개합니다.
-                    </p>
+                    <p>한지의 효능에 대해 소개합니다.</p>
                 </div>
             </div>
             <div className="container">
