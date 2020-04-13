@@ -25,8 +25,8 @@ const Home = (props) => {
                 <div className="container">
                     <h1>금황한지산업에 오신 것을 환영합니다.</h1>
                     <p>
-                        한지 (hanji, handmade traditional Korean paper made from
-                        mulberry trees) 의 세계로 초대합니다.
+                        한지 (hanji, traditional Korean paper made from mulberry
+                        trees) 의 세계로 초대합니다.
                     </p>
                 </div>
             </div>

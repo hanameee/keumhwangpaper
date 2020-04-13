@@ -2,6 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import SEO from "../../components/SEO";
 import Layout from "../../layouts/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTree, faScroll } from "@fortawesome/free-solid-svg-icons";
 
 const Story = (props) => {
     return (
@@ -17,7 +19,10 @@ const Story = (props) => {
                 <div className="storiesContainer mt-4">
                     <div className="story mb-2">
                         <div className="storyImage"></div>
-                        <h2 className="storyTitle">1. 원료(닥나무) 이야기</h2>
+                        <h2 className="storyTitle">
+                            <FontAwesomeIcon icon={faTree} />
+                            원료(닥나무) 이야기
+                        </h2>
                         <div className="storyContent">
                             닥나무는 산기슭의 양지쪽이나 밭둑에서 자라며 주로
                             종이원료로 사용되는 식물로 성질은 차고 맛은 달며
@@ -39,7 +44,10 @@ const Story = (props) => {
                     </div>
                     <div class="story mb-2">
                         <div className="storyImage"></div>
-                        <h2 className="storyTitle">2. 한지 이야기</h2>
+                        <h2 className="storyTitle">
+                            <FontAwesomeIcon icon={faScroll} />
+                            한지 이야기
+                        </h2>
                         <div className="storyContent">
                             전통한지의 원료인 닥나무가 아토피성 피부염의 예방과
                             치료에 효과가 있다는 연구 결과가 나왔다. 전북

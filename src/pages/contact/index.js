@@ -3,6 +3,8 @@ import SEO from "../../components/SEO";
 import Layout from "../../layouts/index";
 import Helmet from "react-helmet";
 import LoadableNaverMap from "../../components/LoadableMap";
+import EmailForm from "../../components/EmailForm";
+import Form from "../../components/Form";
 
 const Contact = (props) => {
     const isClient =
@@ -34,14 +36,16 @@ const Contact = (props) => {
                 <div className="col-12 mt-4 mb-2 contact">
                     <h2>대표자</h2>
                     <p>이관모</p>
+                    {/* <h2>이메일</h2> */}
+                    {/* <p>hwajin729@gmail.com</p> */}
                     <h2>주소</h2>
                     <p>경기도 평택시 청북읍 고잔5길 67-46</p>
-                    <h2>이메일</h2>
-                    <p>hanameee@naver.com</p>
                 </div>
                 <div className="map col-12 mb-4">
                     {isClient && <LoadableNaverMap />}
                 </div>
+                {/* <EmailForm /> */}
+                <Form />
             </div>
         </Layout>
     );

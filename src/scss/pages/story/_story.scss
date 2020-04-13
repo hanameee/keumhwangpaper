@@ -1,9 +1,14 @@
 .storiesContainer {
+    line-height: 2;
     .storyImage {
         width: 100%;
     }
     h2 {
         font-size: 1.5rem;
+        svg {
+            color: $primary;
+            margin-right: 0.5rem;
+        }
     }
     .storySubTitle {
         font-size: 1.1rem;
