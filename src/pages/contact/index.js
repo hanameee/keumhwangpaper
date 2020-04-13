@@ -41,7 +41,9 @@ const Contact = (props) => {
                 </div>
                 <div className="map col-12 mb-4">
                     {isClient && (
-                        <RenderAfterNavermapsLoaded ncpClientId="hhab80gcuh">
+                        <RenderAfterNavermapsLoaded
+                            ncpClientId={process.env.NAVER_MAP_ID}
+                        >
                             <NaverMap
                                 mapDivId={"maps-getting-started-uncontrolled"}
                                 style={{
