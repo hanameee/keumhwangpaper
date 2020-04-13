@@ -15,7 +15,6 @@ const ContactMap = () => {
                     lng: 126.884917,
                 }}
                 defaultZoom={20}
-                draggable={false}
                 zoomControl={true}
             />
         </RenderAfterNavermapsLoaded>
