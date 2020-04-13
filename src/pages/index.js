@@ -74,11 +74,11 @@ const Home = (props) => {
                             제품 더 보기
                         </a>
                     </div>
-                    <div className="col-12 col-md-10 mt-2 mb-1 ">
+                    <div className="col-10 mt-2 mb-1 ">
                         <h2 className="title-4">금황한지산업이 걸어온 길</h2>
                         <CompanyTimeline />
                     </div>
-                    <div className="col-12 col-md-10 mt-2 mb-4">
+                    <div className="col-12 mt-2 mb-4">
                         <h2 className="title-4">믿을 수 있는 금황한지산업</h2>
                         <p>인증서 및 시험성적서 목록</p>
                         <div className="CertificatesWrapper">

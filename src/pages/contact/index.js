@@ -3,7 +3,6 @@ import SEO from "../../components/SEO";
 import Layout from "../../layouts/index";
 import Helmet from "react-helmet";
 import LoadableNaverMap from "../../components/LoadableMap";
-import EmailForm from "../../components/EmailForm";
 import Form from "../../components/Form";
 
 const Contact = (props) => {
@@ -18,7 +17,7 @@ const Contact = (props) => {
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
                 ></meta>
             </Helmet>
-            <div className="intro intro-small">
+            <div className="intro">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -36,15 +35,12 @@ const Contact = (props) => {
                 <div className="col-12 mt-4 mb-2 contact">
                     <h2>대표자</h2>
                     <p>이관모</p>
-                    {/* <h2>이메일</h2> */}
-                    {/* <p>hwajin729@gmail.com</p> */}
                     <h2>주소</h2>
                     <p>경기도 평택시 청북읍 고잔5길 67-46</p>
                 </div>
                 <div className="map col-12 mb-4">
                     {isClient && <LoadableNaverMap />}
                 </div>
-                {/* <EmailForm /> */}
                 <Form />
             </div>
         </Layout>

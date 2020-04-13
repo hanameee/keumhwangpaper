@@ -33,6 +33,7 @@ function Certificates(props) {
                 <HoverableCard
                     image={node.childImageSharp.fluid}
                     hoverText={imagesInfo[idx]}
+                    key={idx}
                 />
             ))}
         </>
