@@ -1,0 +1,13 @@
+.ProductCard {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    .CardImage {
+        width: 150px;
+        margin-right: 1rem;
+    }
+    .CardInformationTitle {
+        color: darken(#68d698, 10);
+        font-size: 1.1rem;
+    }
+}

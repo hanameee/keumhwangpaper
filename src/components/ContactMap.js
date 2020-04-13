@@ -3,7 +3,7 @@ import { RenderAfterNavermapsLoaded, NaverMap } from "react-naver-maps";
 
 const ContactMap = () => {
     return (
-        <RenderAfterNavermapsLoaded ncpClientId={process.env.NAVER_MAP_ID}>
+        <RenderAfterNavermapsLoaded ncpClientId={process.env.GATSBY_MAP_ID}>
             <NaverMap
                 mapDivId={"maps-getting-started-uncontrolled"}
                 style={{

@@ -8,23 +8,6 @@ import IntroCarousel from "../components/Carousel";
 import Certificates from "../components/Certificates";
 
 const Home = (props) => {
-    const data = useStaticQuery(graphql`
-        query {
-            allFile(filter: { relativeDirectory: { eq: "intro" } }) {
-                edges {
-                    node {
-                        base
-                        childImageSharp {
-                            fluid(maxWidth: 500) {
-                                ...GatsbyImageSharpFluid
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    `);
-
     return (
         <Layout bodyClass="page-home">
             <SEO title="Home" />

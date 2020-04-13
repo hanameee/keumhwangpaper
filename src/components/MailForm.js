@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 const EmailForm = () => {
     return (
         <form
-            class="gform"
+            className="gform"
             autocomplete="off"
             method="POST"
             // action="https://script.google.com/macros/s/AKfycbxiMiIhCnmoB9PnSFsV-gkqNZWKmchBK4V-ZmvLQPxwmW4PjdKv/exec"
