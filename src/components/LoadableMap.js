@@ -1,8 +1,9 @@
+import React from "react";
 import loadable from "@loadable/component";
 
-const LoadableMap = loadable(() => import("./NaverMap"));
+const LoadableMap = loadable(() => import("./ContactMap"));
 
-function LoadableMap() {
+function LoadableNaverMap() {
     return (
         <div>
             <LoadableMap />
@@ -10,4 +11,4 @@ function LoadableMap() {
     );
 }
 
-export default LoadableMap;
+export default LoadableNaverMap;

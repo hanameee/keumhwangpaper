@@ -1,7 +1,7 @@
 import React from "react";
 import { RenderAfterNavermapsLoaded, NaverMap } from "react-naver-maps";
 
-const NaverMap = () => {
+const ContactMap = () => {
     return (
         <RenderAfterNavermapsLoaded ncpClientId={process.env.NAVER_MAP_ID}>
             <NaverMap
@@ -22,4 +22,4 @@ const NaverMap = () => {
     );
 };
 
-export default NaverMap;
+export default ContactMap;

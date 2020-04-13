@@ -1,9 +1,12 @@
-.storyContainer {
+.storiesContainer {
     .storyImage {
         width: 100%;
     }
     h2 {
         color: $primary;
         font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
     }
 }
