@@ -1,0 +1,10 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        color: $primary;
+        font-size: 1.5rem;
+    }
+}

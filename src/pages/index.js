@@ -33,6 +33,10 @@ const Home = (props) => {
                     name="금황한지산업"
                     content="금황한지산업 소개 홈페이지"
                 />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+                ></meta>
             </Helmet>
             <div className="intro">
                 <div className="container">

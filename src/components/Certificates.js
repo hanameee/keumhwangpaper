@@ -34,21 +34,6 @@ function Certificates(props) {
                     hoverText={imagesInfo[idx]}
                 />
             ))}
-            {/* {images.allFile.edges.map(({ node }, idx) => (
-                <div className="Certificates" key={idx}>
-                    <div className="CertificatesImageWrapper">
-                        <Paper elevation={3}>
-                            <Img
-                                fluid={node.childImageSharp.fluid}
-                                loading="eager"
-                            />
-                        </Paper>
-                        <div className="CertificateImageHover mt-2">
-                            {imagesInfo[idx]}
-                        </div>
-                    </div>
-                </div>
-            ))} */}
         </>
     );
 }
