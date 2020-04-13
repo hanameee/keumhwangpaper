@@ -18,7 +18,11 @@
         align-items: center;
         -webkit-transition: all 0.7s ease-in-out;
         transition: 0.7s ease-in-out;
-        &:hover {
+        // &:hover {
+        //     background-color: darken(#68d698, 10%);
+        //     opacity: 80%;
+        // }
+        @include hover {
             background-color: darken(#68d698, 10%);
             opacity: 80%;
         }
