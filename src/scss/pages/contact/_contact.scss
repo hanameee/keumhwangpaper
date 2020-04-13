@@ -5,6 +5,14 @@
     align-items: center;
     h2 {
         color: $primary;
+        margin-bottom: 1rem;
         font-size: 1.5rem;
     }
+}
+
+.thankyou_message {
+    color: $primary;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
 }

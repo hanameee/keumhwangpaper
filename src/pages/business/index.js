@@ -6,7 +6,7 @@ import Products from "../../components/Products";
 const Business = (props) => (
     <Layout bodyClass="page-contact">
         <SEO title="Business" />
-        <div className="intro intro-small">
+        <div className="intro">
             <div className="container">
                 <div className="row">
                     <div className="col-12">

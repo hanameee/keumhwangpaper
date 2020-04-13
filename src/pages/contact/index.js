@@ -3,6 +3,7 @@ import SEO from "../../components/SEO";
 import Layout from "../../layouts/index";
 import Helmet from "react-helmet";
 import LoadableNaverMap from "../../components/LoadableMap";
+import Form from "../../components/Form";
 
 const Contact = (props) => {
     const isClient =
@@ -16,7 +17,7 @@ const Contact = (props) => {
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
                 ></meta>
             </Helmet>
-            <div className="intro intro-small">
+            <div className="intro">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -36,12 +37,11 @@ const Contact = (props) => {
                     <p>이관모</p>
                     <h2>주소</h2>
                     <p>경기도 평택시 청북읍 고잔5길 67-46</p>
-                    <h2>이메일</h2>
-                    <p>hanameee@naver.com</p>
                 </div>
                 <div className="map col-12 mb-4">
                     {isClient && <LoadableNaverMap />}
                 </div>
+                <Form />
             </div>
         </Layout>
     );
