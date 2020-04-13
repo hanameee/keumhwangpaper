@@ -1,8 +1,8 @@
 import React from "react";
-import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
 import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
+import HoverableCard from "./HoverableCard";
 
 function Certificates(props) {
     const images = useStaticQuery(graphql`
@@ -29,6 +29,12 @@ function Certificates(props) {
     return (
         <>
             {images.allFile.edges.map(({ node }, idx) => (
+                <HoverableCard
+                    image={node.childImageSharp.fluid}
+                    hoverText={imagesInfo[idx]}
+                />
+            ))}
+            {/* {images.allFile.edges.map(({ node }, idx) => (
                 <div className="Certificates" key={idx}>
                     <div className="CertificatesImageWrapper">
                         <Paper elevation={3}>
@@ -42,7 +48,7 @@ function Certificates(props) {
                         </div>
                     </div>
                 </div>
-            ))}
+            ))} */}
         </>
     );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./HistoryStyle.css";
+import "./History.css";
 const CompanyTimeline = () => {
     return (
         <ul className="cbp_tmtimeline">
