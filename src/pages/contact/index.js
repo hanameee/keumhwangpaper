@@ -7,6 +7,7 @@ import EmailForm from "../../components/MailForm";
 
 const Contact = (props) => {
     const isClient = typeof window !== "undefined";
+    const isDocument = typeof document !== "undefined";
     return (
         <Layout bodyClass="page-contact">
             <SEO title="Contact" />
@@ -40,7 +41,7 @@ const Contact = (props) => {
                     <p>hanameee@naver.com</p>
                 </div>
                 <div className="map col-12 mb-4">
-                    {isClient && (
+                    {isClient && isDocument && (
                         <RenderAfterNavermapsLoaded
                             ncpClientId={process.env.NAVER_MAP_ID}
                         >
