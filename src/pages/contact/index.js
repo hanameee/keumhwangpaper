@@ -2,8 +2,8 @@ import React from "react";
 import SEO from "../../components/SEO";
 import Layout from "../../layouts/index";
 import Helmet from "react-helmet";
-import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
-import EmailForm from "../../components/MailForm";
+import { RenderAfterNavermapsLoaded, NaverMap } from "react-naver-maps";
+import LoadableMap from "../../components/LoadableMap";
 
 const Contact = (props) => {
     const isClient = typeof window !== "undefined";
@@ -41,26 +41,7 @@ const Contact = (props) => {
                     <p>hanameee@naver.com</p>
                 </div>
                 <div className="map col-12 mb-4">
-                    {isClient && isDocument && (
-                        <RenderAfterNavermapsLoaded
-                            ncpClientId={process.env.NAVER_MAP_ID}
-                        >
-                            <NaverMap
-                                mapDivId={"maps-getting-started-uncontrolled"}
-                                style={{
-                                    width: "100%",
-                                    height: "400px",
-                                }}
-                                defaultCenter={{
-                                    lat: 37.042577,
-                                    lng: 126.884917,
-                                }}
-                                defaultZoom={20}
-                                draggable={false}
-                                zoomControl={true}
-                            />
-                        </RenderAfterNavermapsLoaded>
-                    )}
+                    <LoadableMap />
                 </div>
             </div>
         </Layout>
