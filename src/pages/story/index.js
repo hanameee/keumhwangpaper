@@ -15,7 +15,7 @@ const Story = (props) => {
             </div>
             <div className="container">
                 <div className="storiesContainer mt-4">
-                    <div class="story mb-2">
+                    <div className="story mb-2">
                         <div className="storyImage"></div>
                         <h2 className="storyTitle">1. 원료(닥나무) 이야기</h2>
                         <div className="storyContent">

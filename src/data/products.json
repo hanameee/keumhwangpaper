@@ -1,32 +1,26 @@
 [
     {
         "name": "기능성한지",
-        "description": "New clients recieve an obligation free consultation.",
-        "image": "/features/noun_branding_1885335.svg"
+        "description": "New clients recieve an obligation free consultation."
     },
     {
         "title": "부직포접합용기능성한지",
-        "description": "All members of our team are certified accountants.",
-        "image": "/features/noun_The Process_1885341.svg"
+        "description": "All members of our team are certified accountants."
     },
     {
         "title": "한지기름종이",
-        "description": "We stay up to date on the latest changes to the tax code.",
-        "image": "/features/noun_3d modeling_1885342.svg"
+        "description": "We stay up to date on the latest changes to the tax code."
     },
     {
         "name": "한지황토벽지",
-        "description": "New clients recieve an obligation free consultation.",
-        "image": "/features/noun_branding_1885335.svg"
+        "description": "New clients recieve an obligation free consultation."
     },
     {
         "title": "한지방수매트",
-        "description": "All members of our team are certified accountants.",
-        "image": "/features/noun_The Process_1885341.svg"
+        "description": "All members of our team are certified accountants."
     },
     {
         "title": "한지파우더",
-        "description": "We stay up to date on the latest changes to the tax code.",
-        "image": "/features/noun_3d modeling_1885342.svg"
+        "description": "We stay up to date on the latest changes to the tax code."
     }
 ]
