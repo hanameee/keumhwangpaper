@@ -2,7 +2,6 @@ import React from "react";
 import { Paper } from "@material-ui/core";
 import Img from "gatsby-image";
 
-import "./HoverableCard.scss";
 const HoverableCard = ({ image, hoverText }) => {
     return (
         <div className="HoverableCard">
