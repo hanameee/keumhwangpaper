@@ -10,6 +10,7 @@ const Business = (props) => (
                 <div className="row">
                     <div className="col-12">
                         <h1>비즈니스</h1>
+                        <p>금황한지산업의 다양한 제품들을 소개합니다.</p>
                     </div>
                 </div>
             </div>

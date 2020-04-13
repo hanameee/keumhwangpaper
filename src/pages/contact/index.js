@@ -2,12 +2,11 @@ import React from "react";
 import SEO from "../../components/SEO";
 import Layout from "../../layouts/index";
 import Helmet from "react-helmet";
-import { RenderAfterNavermapsLoaded, NaverMap } from "react-naver-maps";
 import LoadableNaverMap from "../../components/LoadableMap";
 
 const Contact = (props) => {
-    const isClient = typeof window !== "undefined";
-    const isDocument = typeof document !== "undefined";
+    const isClient =
+        typeof window !== "undefined" && typeof document !== "undefined";
     return (
         <Layout bodyClass="page-contact">
             <SEO title="Contact" />
@@ -41,7 +40,7 @@ const Contact = (props) => {
                     <p>hanameee@naver.com</p>
                 </div>
                 <div className="map col-12 mb-4">
-                    <LoadableNaverMap />
+                    {isClient && <LoadableNaverMap />}
                 </div>
             </div>
         </Layout>
