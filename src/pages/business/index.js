@@ -16,7 +16,7 @@ const Business = (props) => (
                 </div>
             </div>
         </div>
-        <div className="container">
+        <div className="container px-2">
             <div className="row">
                 <div className="col-12">
                     <h4 className="mt-4 mb-2">금황한지산업 제품소개</h4>

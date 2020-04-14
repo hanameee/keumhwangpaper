@@ -31,7 +31,7 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <div className="container pt-6 pt-md-4">
+            <div className="container pt-6 pt-md-4 px-2">
                 <div className="row justify-content-start">
                     <div className="col-12">
                         <h2 className="text-dark mb-4 title-4">
