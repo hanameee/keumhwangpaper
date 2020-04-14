@@ -18,13 +18,14 @@
         align-items: center;
         -webkit-transition: all 0.7s ease-in-out;
         transition: 0.7s ease-in-out;
+        text-align: center;
+        font-size: 0.6rem;
         &:hover {
             background-color: darken(#68d698, 10%);
             opacity: 0.8;
         }
-        // @include hover {
-        //     background-color: darken(#68d698, 10%);
-        //     opacity: 80%;
-        // }
+        @include media-breakpoint-up(md) {
+            font-size: 1rem;
+        }
     }
 }
