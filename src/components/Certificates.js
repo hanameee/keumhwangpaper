@@ -29,14 +29,12 @@ function Certificates({ modalClickHandler }) {
     return (
         <>
             {images.allFile.edges.map(({ node }, idx) => (
-                <>
-                    <HoverableCard
-                        image={node.childImageSharp.fluid}
-                        hoverText={imagesInfo[node.base.replace(".png", "")]}
-                        key={idx}
-                        modalClickHandler={modalClickHandler}
-                    />
-                </>
+                <HoverableCard
+                    image={node.childImageSharp.fluid}
+                    hoverText={imagesInfo[node.base.replace(".png", "")]}
+                    key={idx}
+                    modalClickHandler={modalClickHandler}
+                />
             ))}
         </>
     );
