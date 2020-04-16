@@ -1,10 +1,8 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
-import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 import HoverableCard from "./HoverableCard";
 
-function Certificates(props) {
+function Certificates({ modalClickHandler }) {
     const images = useStaticQuery(graphql`
         query {
             allFile(filter: { relativeDirectory: { eq: "certificates" } }) {
@@ -21,6 +19,7 @@ function Certificates(props) {
             }
         }
     `);
+
     const imagesInfo = {
         certificate1: "황토 한지 (마스크)",
         certificate2: "마스크용 황토 한지",
@@ -34,6 +33,7 @@ function Certificates(props) {
                     image={node.childImageSharp.fluid}
                     hoverText={imagesInfo[node.base.replace(".png", "")]}
                     key={idx}
+                    modalClickHandler={modalClickHandler}
                 />
             ))}
         </>
