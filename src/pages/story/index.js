@@ -24,6 +24,12 @@ const Story = (props) => {
             }
         }
     `);
+    const treeImg = images.allFile.edges.filter(
+        (edge) => edge.node.base == "tree.png"
+    );
+    const hanjiImg = images.allFile.edges.filter(
+        (edge) => edge.node.base == "hanji.png"
+    );
     return (
         <Layout bodyClass="page-services">
             <SEO title="Services" />
@@ -66,9 +72,12 @@ const Story = (props) => {
                         <div className="storyImage mb-2">
                             <Paper elevation={3}>
                                 <Img
+                                    // fluid={
+                                    //     images.allFile.edges[0].node
+                                    //         .childImageSharp.fluid
+                                    // }
                                     fluid={
-                                        images.allFile.edges[0].node
-                                            .childImageSharp.fluid
+                                        treeImg[0].node.childImageSharp.fluid
                                     }
                                     loading="eager"
                                 />
@@ -121,8 +130,7 @@ const Story = (props) => {
                             <Paper elevation={3}>
                                 <Img
                                     fluid={
-                                        images.allFile.edges[1].node
-                                            .childImageSharp.fluid
+                                        hanjiImg[0].node.childImageSharp.fluid
                                     }
                                     loading="eager"
                                 />
