@@ -22,17 +22,17 @@ function Certificates(props) {
         }
     `);
     const imagesInfo = {
-        "0": "황토 한지 마스크",
-        "1": "마스크용 황토 한지",
-        "2": "황토 마스크용 한지",
-        "3": "한지 추출물 (검은황토)",
+        certificate1: "황토 한지 (마스크)",
+        certificate2: "마스크용 황토 한지",
+        certificate3: "황토 마스크용 한지",
+        certificate4: "한지 추출물 (검은황토)",
     };
     return (
         <>
             {images.allFile.edges.map(({ node }, idx) => (
                 <HoverableCard
                     image={node.childImageSharp.fluid}
-                    hoverText={imagesInfo[idx]}
+                    hoverText={imagesInfo[node.base.replace(".png", "")]}
                     key={idx}
                 />
             ))}

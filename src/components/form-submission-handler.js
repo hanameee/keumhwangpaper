@@ -85,7 +85,6 @@
                 if (thankYouMessage) {
                     thankYouButton.disabled = false;
                     thankYouMessage.style.display = "block";
-                    console.log(thankYouButton);
                 }
             }
         };

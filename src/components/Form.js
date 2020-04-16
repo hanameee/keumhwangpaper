@@ -74,7 +74,6 @@ class Form extends Component {
     };
 
     handleChange = ({ target }) => {
-        console.log(target);
         const { name, value } = target;
         const { state } = this;
         state.form[name] = value;
@@ -132,12 +131,10 @@ class Form extends Component {
                                 <TextField
                                     onChange={this.handleChange}
                                     id="outlined-multiline-flexible"
-                                    className="emailFormInput"
                                     label="문의 내용"
                                     multiline
                                     name="content"
                                     key="content"
-                                    rowsMax={4}
                                     variant="outlined"
                                     value={content}
                                 />
@@ -159,7 +156,7 @@ class Form extends Component {
                                     </label>
                                 </fieldset>
                                 {clicked ? (
-                                    <div className="col-12 mb-4 btn-container">
+                                    <div className="col-12 my-4 btn-container">
                                         <button
                                             type="button"
                                             className="button"
@@ -169,7 +166,7 @@ class Form extends Component {
                                         </button>
                                     </div>
                                 ) : (
-                                    <div className="col-12 mb-4 btn-container">
+                                    <div className="col-12 my-4 btn-container">
                                         <button
                                             type="button"
                                             className="button"
