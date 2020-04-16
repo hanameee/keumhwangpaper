@@ -24,7 +24,6 @@ const Story = (props) => {
             }
         }
     `);
-    console.log(images.allFile.edges);
     return (
         <Layout bodyClass="page-services">
             <SEO title="Services" />

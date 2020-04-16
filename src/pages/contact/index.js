@@ -35,6 +35,10 @@ const Contact = (props) => {
                 <div className="col-12 mt-4 mb-2 contact">
                     <h2>대표자</h2>
                     <p>이관모</p>
+                    <h2>전화</h2>
+                    <p>031-683-0224</p>
+                    <h2>팩스</h2>
+                    <p>031-683-1638</p>
                     <h2>주소</h2>
                     <p>경기도 평택시 청북읍 고잔5길 67-46</p>
                 </div>
