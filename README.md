@@ -1,31 +1,46 @@
-# Gatsby Serif Theme
+<h1 align="center">koreanpaper.kr 🌱</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/hanameee\_" target="_blank">
+    <img alt="Twitter: hanameee\_" src="https://img.shields.io/twitter/follow/hanameee\_.svg?style=social" />
+  </a>
+</p>
 
-Serif is a beautiful small business theme for Gatsby. It contains content types for the archetypical small business website. The theme is fully responsive, blazing fast and artfully illustrated.
 
-## Theme features
+>  Gatsby를 사용하고, Netlify 를 통해 배포한 기업 소개 홈페이지
 
-- Multi-page theme (not just a blog) that uses Markdown for multiple content-types/templates. It uses `gatsby-transformer-remark` and has several examples of querying and filtering `allMarkdownRemark`
-- Includes a graphql query in `gatsby-node.js` that creates pages and templates by content type based on the folder `src/pages/services`, `src/pages/team`,
-- Services (Markdown)
-- Team (Markdown)
-- Testimonials (Markdown)
-- Features (Data)
-- SCSS using `gatsby-plugin-sass`
-- Responsive design
-- Bootstrap 4 grid and media queries only
-- Responsive menu
-- Robust example content included
-- Royalty free illustrations included
-- SEO Titles & Meta using `gatsby-plugin-react-helmet`
-- ESLint (google config)
-- Prettier code styling
+### 🏠 [Homepage](koreanpaper.kr)
 
-## Deployment
+## Used Stack
 
+Gatsby starter : [gatsbyserif](https://www.gatsbyjs.org/starters/JugglerX/gatsby-serif-theme/)
+
+CSS framework : [material-ui](https://material-ui.com/components/text-fields/)
+
+Deploy : [Netlify](https://netlify.com/)
+
+## Install
+
+```sh
+yarn install
 ```
-npm install
-```
 
-```
+## Usage
+
+```sh
 gatsby develop
 ```
+
+## Author
+
+👤 **hanameee**
+
+* Website: https://hanameee.github.io
+* Twitter: [@hanameee\_](https://twitter.com/hanameee\_)
+* Github: [@hanameee](https://github.com/hanameee)
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
